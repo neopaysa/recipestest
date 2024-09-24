@@ -1,0 +1,68 @@
+/* Styling for the main page */
+
+* {
+    background-color: antiquewhite;
+}
+
+#maintitle {
+    font-size: 64px;
+    color: #bfba5c;
+    text-align: center;
+
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Align items side by side */
+    gap: 20px; /* Space between the images */
+    justify-content: center; /* Optional: Center the images horizontally */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+li {
+    margin-bottom: 20px; /* Margin below each item */
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 400px; /* Set width for each image container */
+    height: 250px;
+    overflow: hidden;
+}
+
+.image-container img {
+    display: block;
+    width: 100%; /* Ensure the image fits the container */
+    height: 100%;
+    height: auto;
+}
+
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the text */
+    color: white;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-align: center; /* Ensures text is centered within the box */
+    white-space: nowrap; /* Prevents text from breaking into multiple lines */
+}
+
+
+a.recipe-link {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+
+a.recipe-link:hover .overlay-text {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker on hover */
+}

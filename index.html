@@ -1,16 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Odin Recipes!</h1>
-    <ul>
-        <li><a href="recipes/lasagna.html">Lasagna Recipe</a></li>
-        <li><a href="recipes/burger.html">Burger Recipe</a></li>
-        <li><a href="recipes/pizza.html">Pizza Recipe</a></li>
-    </ul>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="maintitle">Odin Recipes!</h1>
+        <ul>
+            <li>
+                <a href="recipes/lasagna.html" class="recipe-link">
+                    <div class="image-container">
+                        <img src="images/lasagna.jpeg" alt="Lasagna">
+                        <span class="overlay-text">Lasagna Recipe</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="recipes/burger.html" class="recipe-link">
+                    <div class="image-container">
+                        <img src="images/burgers.jpg" alt="Burger">
+                        <span class="overlay-text">Burger Recipe</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="recipes/pizza.html" class="recipe-link">
+                    <div class="image-container">
+                        <img src="images/pizza2.jpeg" alt="Pizza">
+                        <span class="overlay-text">Pizza Recipe</span>
+                    </div>
+                </a>
+            </li>
+            <!-- <li><a href="recipes/lasagna.html">Lasagna Recipe</a></li>
+            <li><a href="recipes/burger.html">Burger Recipe</a></li>
+            <li><a href="recipes/pizza.html">Pizza Recipe</a></li> -->
+        </ul>
+    </body>
 </html>
